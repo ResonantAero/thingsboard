@@ -323,6 +323,14 @@
                 <artifactId>extensions-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependencies>
+              <dependency>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>applicationinsights-web</artifactId>
+                <!-- or applicationinsights-core for bare API -->
+                <version>2.0.n</version>
+              </dependency>
+            </dependencies>
             <dependency>
                 <groupId>org.thingsboard</groupId>
                 <artifactId>extensions-core</artifactId>
@@ -352,6 +360,13 @@
                 <classifier>extension</classifier>
                 <version>${project.version}</version>
             </dependency>
+            <dependencies>
+            <dependency>
+                  <groupId>com.microsoft.azure</groupId>
+                  <artifactId>applicationinsights-logging-logback</artifactId>
+                  <version>2.0.n</version>
+               </dependency>
+            </dependencies>
             <dependency>
                 <groupId>org.thingsboard.extensions</groupId>
                 <artifactId>extension-sqs</artifactId>
